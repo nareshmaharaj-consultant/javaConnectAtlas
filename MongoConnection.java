@@ -19,7 +19,7 @@ public class MongoConnection {
    public static void main( String args[] ) 
    {  
 
-   	MongoClient mongoClient = MongoClients.create("mongodb://naresh:pisces2566@cluster0-shard-00-00-nyjzb.mongodb.net:27017,cluster0-shard-00-01-nyjzb.mongodb.net:27017,cluster0-shard-00-02-nyjzb.mongodb.net:27017/?replicaSet=Cluster0-shard-0&authSource=admin&ssl=true");
+   	MongoClient mongoClient = MongoClients.create("mongodb://naresh:p*******@cluster0-shard-00-00-nyjzb.mongodb.net:27017,cluster0-shard-00-01-nyjzb.mongodb.net:27017,cluster0-shard-00-02-nyjzb.mongodb.net:27017/?replicaSet=Cluster0-shard-0&authSource=admin&ssl=true");
 
  	MongoDatabase database = mongoClient.getDatabase("my-sample-dvla");
 	MongoCollection<Document> collection = database.getCollection("sample-drivers");
